@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CRIMSON CFW | Rules</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+html,body{
+margin:0 ;
+padding:0;
+background:#0b0b0b;
+font-family:Arial;
+color:#0b0b0b;
+}
+
+.navbar .container{
+    direction:ltr;
+}
+
+.navbar-nav{
+    direction:rtl;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg">
+
+<div class="container">
+
+<a class="navbar-brand logo" href="index.html">
+<img src="pc.png" class="img-_-logo">
+</a>
+
+<ul class="navbar-nav ms-auto align-items-center">
+
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero text-center reveal">
+
+<div class="container">
+
+<h1>CRIMSON STORE RULES</h1>
+<p>يرجى قراءة الشروط والأحكام بعناية قبل إتمام أي عملية شراء</p>
+
+</div>
+
+</section>
+
+<!-- RULES -->
+
+<!-- RULES POPUP -->
+
+<div id="rulesPopup" class="buy-modal">
+
+    <div class="buy-box">
+
+        <h2 id="ruleTitle"></h2>
+
+        <div id="ruleContent">
+
+            سيتم عرض القوانين هنا
+
+        </div>
+
+        <br>
+
+        <button
+            class="cancel-btn"
+            onclick="closeRule()">
+
+            CLOSE
+
+        </button>
+
+    </div>
+
+</div>
+<div id="city" class="rules-content" style="display:none;">
+
+<div class="policy-container">
+
+<h1>🏙 CITY RULES</h1>
+
+<h2>1. احترام الجميع</h2>
+<p>يمنع السب والشتم والعنصرية.</p>
+
+<h2>2. منع التهكير</h2>
+<p>أي استخدام للهاكات يؤدي للباند.</p>
+
+<h2>3. منع استغلال الثغرات</h2>
+<p>استغلال الأخطاء يعرضك للعقوبة.</p>
+
+</div>
+
+</div>
+
+<div id="police" class="rules-content" style="display:none;">
+
+<div class="policy-container">
+
+<h1>🛡 POLICE RULES</h1>
+
+    <p class="highlight">
+        تهدف قوانين الشرطة إلى الحفاظ على العدالة والنظام العام داخل المدينة، ويلتزم جميع أفراد الشرطة بالتقيد الكامل بهذه الأنظمة.
+    </p>
+
+    <h2>الالتزام المهني</h2>
+    <p>
+        يجب على جميع أفراد الشرطة الالتزام بالاحترافية والاحترام أثناء أداء واجباتهم والتعامل مع جميع المواطنين بعدالة وحيادية.
+    </p>
+
+    <h2>استخدام الصلاحيات</h2>
+    <p>
+        يمنع استغلال الصلاحيات أو استخدامها لتحقيق أي منفعة شخصية أو لأي غرض خارج نطاق العمل الأمني.
+    </p>
+
+    <h2>الإجراءات الأمنية</h2>
+    <p>
+        يجب الالتزام بالإجراءات والأنظمة المعتمدة أثناء التوقيف أو المطاردة أو تنفيذ العمليات الأمنية.
+    </p>
+
+    <h2>استخدام القوة</h2>
+    <p>
+        يمنع استخدام القوة المفرطة، ويجب أن يكون استخدام الأسلحة والمعدات الأمنية ضمن الحدود المسموح بها نظامياً.
+    </p>
+
+    <h2>الممتلكات الحكومية</h2>
+    <p>
+        يجب المحافظة على جميع الممتلكات والمركبات الحكومية، ويمنع استخدامها بشكل مخالف للأنظمة.
+    </p>
+
+    <h2>السرية والمعلومات</h2>
+    <p>
+        يمنع تسريب أو مشاركة أي معلومات أمنية أو بيانات خاصة بالشرطة مع أي جهة غير مصرح لها.
+    </p>
+
+    <h2>التعاون والمخالفات</h2>
+    <p>
+        يمنع التعاون أو التستر على أي أعمال مخالفة للأنظمة، ويحق للإدارة اتخاذ الإجراءات اللازمة بحق المخالفين.
+    </p>
+
+    <h2>صلاحيات الإدارة</h2>
+    <p>
+        يحق لإدارة السيرفر تعديل أو تحديث قوانين الشرطة في أي وقت بما يحقق مصلحة المدينة ويحافظ على التوازن العام.
+    </p>
+
+</div>
+
+</div>
+
+<div id="gang" class="rules-content" style="display:none;">
+
+<div class="policy-container">
+
+<h1>♛ GANG RULES</h1>
+
+<h2>1. احترام قوانين السيرفر</h2>
+<p>العصابات تخضع لجميع قوانين المدينة.</p>
+
+<h2>2. منع الميتا قيم</h2>
+<p>يمنع استخدام المعلومات الخارجية.</p>
+
+<h2>3. منع الباور قيم</h2>
+<p>يجب الحفاظ على الواقعية.</p>
+
+</div>
+
+</div>
+<div id="store" class="rules-content" style="display:none;">
+
+<div class="policy-container">
+
+<h1>STORE RULES</h1>
+
+<p class="highlight">
+إن إتمام عملية الشراء من متجر CRIMSON CFW يعني موافقتك الكاملة على جميع الشروط والأحكام التالية.
+</p>
+
+<h2>1. الموافقة على الشروط والأحكام</h2>
+<p>
+بمجرد إتمام عملية الشراء، يعتبر العميل موافقاً على جميع الشروط والأحكام والسياسات المعتمدة من قبل إدارة متجر CRIMSON CFW.
+</p>
+
+<h2>2. مدة صلاحية المنتجات</h2>
+<p>
+جميع المنتجات والمركبات والخدمات المباعة في متجر CRIMSON CFW تكون صالحة لمدة سيزن واحد فقط، ولا يحق للعميل المطالبة بها في أي سيزن لاحق.
+</p>
+
+<h2>3. تعديل المنتجات والخدمات</h2>
+<p>
+يحتفظ متجر CRIMSON CFW بحق تعديل أو موازنة أو تحديث أي منتج أو مركبة أو خدمة تم شراؤها، وذلك بما يتوافق مع تحديثات السيرفر أو القوانين الجديدة أو متطلبات التوازن العام.
+</p>
+
+<h2>4. المشاكل التقنية</h2>
+<p>
+في حال وجود أي خلل تقني أو مشكلة داخل المنتج المشترى، يجب إبلاغ إدارة المتجر بشكل فوري للنظر في المشكلة ومعالجتها.
+</p>
+
+<h2>5. إساءة استخدام المنتجات</h2>
+<p>
+يمنع منعاً باتاً استغلال المنتجات أو المركبات أو الخدمات بأي شكل مخالف لأنظمة السيرفر، ويحق للإدارة سحب المنتج فوراً دون تعويض.
+</p>
+
+<h2>6. المنتجات الخارجية</h2>
+<p>
+يمنع استلام أو طلب أي مركبات أو تعديلات أو ملفات من خارج السيرفر، ويحق لإدارة المتجر رفض أي طلب يخالف ذلك.
+</p>
+
+<h2>7. عدم الاسترجاع أو الاستبدال</h2>
+<p>
+بعد تسليم المنتج وإضافته داخل السيرفر، لا يحق للعميل طلب الاسترجاع أو الاستبدال أو تغيير المنتج لأي سبب كان.
+</p>
+
+<h2>8. ملفات المنتجات</h2>
+<p>
+شراء أي مركبة أو منتج لا يمنح العميل الحق في الحصول على ملفاته أو حقوقه التقنية أو إعادة توزيعه.
+</p>
+<h2>9. الأسعار والعروض</h2>
+<p>
+لا يحق للعميل المطالبة بتخفيضات أو عروض خاصة أو منتجات مجانية خارج ما يتم الإعلان عنه رسمياً.
+</p>
+
+<h2>10. العقوبات الإدارية</h2>
+<p>
+شراء أي منتج لا يمنح العميل حصانة من العقوبات الإدارية أو الباند أو أي إجراء تنظيمي داخل السيرفر.
+</p>
+
+<h2>11. البيع وإعادة البيع</h2>
+<p>
+يمنع بيع أو إعادة بيع أو نقل ملكية أي منتج تم شراؤه من المتجر لأي طرف آخر دون موافقة الإدارة.
+</p>
+
+<h2>12. الحظر النهائي</h2>
+<p>
+في حال حصول العميل على حظر نهائي من السيرفر، يتم سحب جميع المنتجات والممتلكات التي تم شراؤها دون تعويض.
+</p>
+
+<h2>13. الخروج من الديسكورد</h2>
+<p>
+يحق للإدارة سحب جميع المنتجات والخدمات من العميل في حال خروجه من مجتمع الديسكورد الرسمي للسيرفر.
+</p>
+
+<h2>14. التعويضات</h2>
+<p>
+لا يحق للعميل المطالبة بأي تعويض مالي أو معنوي أو افتراضي مقابل أي عملية شراء تمت بإرادته الشخصية.
+</p>
+
+<h2>15. صلاحيات الإدارة</h2>
+<p>
+يحق لإدارة متجر CRIMSON CFW رفض أو إلغاء أي عملية شراء في حال الاشتباه بأي مخالفة أو محاولة استغلال أو استخدام غير مشروع للمنتجات.
+</p>
+
+<h2>16. الأحكام النهائية</h2>
+<p>
+يحتفظ متجر CRIMSON CFW بحق تعديل هذه الشروط والأحكام في أي وقت دون إشعار مسبق.
+</p>
+
+<p class="highlight" style="margin-top:40px;">
+والله ولي التوفيق
+<br>
+إدارة CRIMSON CFW
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function showRules(id,btn){
+
+    document.querySelectorAll('.rules-content')
+    .forEach(el=>{
+        el.style.display='none';
+    });
+
+    document.getElementById(id)
+    .style.display='block';
+
+    document.querySelectorAll('.category-btn')
+    .forEach(el=>{
+        el.classList.remove('active');
+    });
+
+    if(btn){
+        btn.classList.add('active');
+    }
+
+    localStorage.setItem(
+        "activeRule",
+        id
+    );
+}
+
+/* عند فتح الصفحة */
+
+window.onload=function(){
+
+    let current=
+    window.location.hash.replace('#','');
+
+    if(!current){
+        current=
+        localStorage.getItem(
+            "activeRule"
+        ) || "city";
+    }
+
+    document.querySelectorAll('.rules-content')
+    .forEach(el=>{
+        el.style.display='none';
+    });
+
+    document.getElementById(current)
+    .style.display='block';
+
+    document.querySelectorAll('.category-btn')
+    .forEach(btn=>{
+
+        btn.classList.remove('active');
+
+        if(
+            btn.getAttribute("onclick")
+            .includes(current)
+        ){
+            btn.classList.add('active');
+        }
+
+    });
+
+}
+
+</script>
+ <div class="footer-links">
+
+    <a href="index.html">HOME</a>
+
+    <a href="shop.html">SHOP</a>
+
+    <a href="leaderboard.html">LEADERBOARD</a>
+
+    <a href="rules.html">CITY RULES</a>
+
+    <a href="rules.html#police">POLICE</a>
+
+    <a href="rules.html#gang">GANGS</a>
+
+    <a href="rules.html#store">STORE RULES</a>
+
+    <a href="product.html">Product Details</a>
+        <a href="gallery.html">Crimson Gallery</a>
+
+    <a href="https://discord.gg/cmzrp" target="_blank">
+        DISCORD
+    </a>
+
+    <a href="#" onclick="openContactModal()">
+        CONTACT US
+    </a>
+
+</div>
+<script>
+    const observer = new IntersectionObserver(
+entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".reveal")
+.forEach(el=>observer.observe(el));
+</script>
+<script>
+
+const reveals =
+document.querySelectorAll('.reveal');
+
+function revealElements(){
+
+    reveals.forEach(el=>{
+
+        const top =
+        el.getBoundingClientRect().top;
+
+        const trigger =
+        window.innerHeight - 100;
+
+        if(top < trigger){
+
+            el.classList.add('active');
+
+        }
+
+    });
+
+}
+
+window.addEventListener(
+    'scroll',
+    revealElements
+);
+
+window.addEventListener(
+    'load',
+    revealElements
+);
+
+</script>
+</body>
+</html>
